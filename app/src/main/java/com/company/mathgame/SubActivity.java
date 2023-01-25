@@ -35,7 +35,7 @@ public class SubActivity extends AppCompatActivity {
     int userLife = 3;
 
     CountDownTimer timer;
-    private static final long START_TIMER_IN_MILLIS = 10000;
+    private static final long START_TIMER_IN_MILLIS = 30000;
     boolean timer_running;
     long time_left_in_millis = START_TIMER_IN_MILLIS;
 
