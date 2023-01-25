@@ -96,10 +96,23 @@ public class SubActivity extends AppCompatActivity {
     public void gameContinue(){
         number1 = random.nextInt(100);
         number2 = random.nextInt(100);
+        if (number1 < number2){
+            generateNewRandomNumbers();
+        }
+
         realAnswer = number1 - number2;
 
         question.setText(number1 + " - " + number2);
         startTimer();
+    }
+
+    public void generateNewRandomNumbers(){
+        number1 = random.nextInt(100);
+        number2 = random.nextInt(100);
+
+        if (number1 < number2){
+            generateNewRandomNumbers();
+        }
     }
 
     public void startTimer(){
