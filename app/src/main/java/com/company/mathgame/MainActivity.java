@@ -46,5 +46,28 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        multiplication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MultiActivity.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
+
+        division.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, DivActivity.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
     }
 }
